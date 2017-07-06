@@ -1,7 +1,7 @@
-class Car(object): # в Python >=3.6 явное наследование от object не обязятельно
+class Car(object):
     wheels = 4
 
-    def __init__(self, brand, model):  # Конструктор
+    def __init__(self, brand, model):
         self.name = brand
         self.model = model
 
@@ -25,9 +25,9 @@ def class_test_():
     assert tesla.wheels == 4
 
     ferrari = Car('Ferrari','488')
-    assert tesla.name == 'Ferrari'
-    assert tesla.model == '488'
-    assert tesla.wheels == 4
+    assert ferrari.name == 'Ferrari'
+    assert ferrari.model == '488'
+    assert ferrari.wheels == 4
 
 
 def static_():
